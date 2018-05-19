@@ -60,6 +60,6 @@ int main()
 	cout<<"***"<<endl;
 	return 0;
 }
-
+```
 这就是这道题的代码，大家还可以做一些练习题，在loj.ac 的第二题“hello world！”大家可以试一下
 谢谢大家！
