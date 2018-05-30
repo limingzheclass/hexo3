@@ -59,5 +59,41 @@
     <div class="comments" id="comments">
     </div>
   {% endif %}
-
+{% elseif theme.changyan.appid and theme.changyan.appkey %}
+<div id="SOHUCS"></div>
+{% elseif theme.gitment.enable %}
+<div onclick="showGitment()" id="gitment_title" class="gitment_title">显示 Gitment 评论</div>
+<div id="container" style="display:none"></div>
+<link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">
+<script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
+<script>
+const myTheme = {
+render(state, instance) {
+const container = document.createElement('div');
+container.lang = "en-US";
+container.className = 'gitment-container gitment-root-container';
+container.appendChild(instance.renderHeader(state, instance));
+container.appendChild(instance.renderEditor(state, instance));
+container.appendChild(instance.renderComments(state, instance));
+container.appendChild(instance.renderFooter(state, instance));
+return container;
+}
+}
+function showGitment() {
+$("#gitment_title").attr("style", "display:none");
+$("#container").attr("style", "").addClass("gitment_container");
+var gitment = new Gitment({
+id: window.location.pathname,
+theme: myTheme,
+owner: '{{ theme.gitment.owner }}',
+repo: '{{ theme.gitment.repo }}',
+oauth: {
+client_id: '{{ 9f9e2b44f8bbac59126c23ecff81d3facc27379ff7a73a81187a4bcd1d41d8cf }}',
+client_secret: '{{ 9cebfdbdd37a5ea38cf3538d070d9f2677f1cec165a0606aeecb326ce617626d }}'
+}
+});
+gitment.render('container');
+}
+</script>
+{% endif %}
 {% endif %}
