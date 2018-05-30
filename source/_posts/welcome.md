@@ -1,6 +1,6 @@
 ---
 layout: '[post]'
-title: c++
+title: welcome to the blog
 date: 2018-05-13 16:24:25
 tags:
 ---
