@@ -53,6 +53,9 @@
       {% else %}
         <div id="gitment-container"></div>
       {% endif %}
+  {% elseif theme.livere_uid %}
+      <div id="lv-container" data-id="city" data-uid="{{ theme.livere_uid }}"></div>
+{% endif %}
     </div>
 
   {% elseif theme.valine.enable and theme.valine.appid and theme.valine.appkey %}
