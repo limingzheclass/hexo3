@@ -1,3 +1,10 @@
+---
+layout: '[post]'
+title: syzoj中文简易docker版搭建教程
+date: 2018-05-13 16:24:25
+tags:
+---
+
 今天，由likecoding的博主给大家带来如何安装syzoj
 
 ## 准备工具：
