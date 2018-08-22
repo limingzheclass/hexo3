@@ -12,7 +12,9 @@ tags:
 
 本文GitHub地址： https://github.com/jyeric/hexo3/blob/master/source/_posts/syzoj.md
 
-本文第二链接（自己的hexo博客链接）：https://jyeric.likecoding.gq
+本文csdn链接：https://blog.csdn.net/jyeric1/article/details/81878843
+
+本文博客园链接：https://www.cnblogs.com/likecoding/p/9517749.html
 
 更新将在第二链接及github进行更新csdn请关注评论内容
 
