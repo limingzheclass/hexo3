@@ -10,7 +10,7 @@ tags:
 ## 准备工具：
 一台ubuntu18.04的电脑
 
-本文GitHub地址：https://github.com/jyeric/hexo3
+本文GitHub地址： https://github.com/jyeric/hexo3/blob/master/source/_posts/syzoj.md
 
 本文第二链接（自己的hexo博客链接）：https://jyeric.likecoding.gq
 
