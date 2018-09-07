@@ -1,0 +1,19 @@
+language: node_js
+node_js:
+- '4'
+branches:
+  only:
+  - travis
+cache:
+  directories:
+  - node_modules
+install:
+- npm install hexo-cli -g
+- npm install hexo-deployer-git --save
+- npm install
+script:
+- hexo clean
+- hexo g
+
+after_success:
+- hexo deploy
