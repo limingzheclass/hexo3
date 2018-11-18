@@ -1,4 +1,4 @@
-# hexo3
-the own blog of jyeric's
+# website
+李明喆小课堂官方网站
 
-on blog https://blog.likecoding.ooo
+维护者：
